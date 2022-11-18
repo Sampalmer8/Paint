@@ -3,11 +3,14 @@
   <head>
     <title>Paint Program</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
+    <script defer src="sketch.js"></script>
     <script
       src="https://kit.fontawesome.com/c82a5ee139.js"
       crossorigin="anonymous"
     ></script>
+    <script src="libraries/quicksettings.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.gui.js"></script>
   </head>
   <body>
     <div class="app">
@@ -24,19 +27,19 @@
           </label>
         </div>
         <div class="size">
-          <label for="pen.size">Size</label>
+          <label for="pen-size">Size</label>
           <input type="range" id="pen-size" min="1" max="50" />
         </div>
         <div class="color">
-          <label for="pen.color">Colour</label>
+          <label for="pen-color">Colour</label>
           <input type="color" id="pen-color" value="#000000" />
         </div>
         <div class="actions">
-          <button id="reset-canvas">Canvas</button>
+          <button id="reset-canvas">Reset</button>
           <button id="save-canvas">Save</button>
         </div>
       </div>
-      <div id="canvas-wrapper"></div>
+      <div id="canvas-parent"></div>
     </div>
   </body>
 </html>
